@@ -51,3 +51,23 @@ a{
     height: 92px;
 
 }
+
+.mural-conteiner{
+    background-color: #0A2902;
+}
+
+.mural-inf{
+    color: #c0ffc4;
+    text-align: center;
+    font-family: Itim;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.img-mural-inf{
+    display: flex;
+    justify-content: space-around;
+    padding: 24px 24px 11px 24px;
+}
