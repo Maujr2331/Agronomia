@@ -1,0 +1,53 @@
+/*Fonte da logo*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nosifer&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:wght@500;800&display=swap');
+
+/*Fonte do menu*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Nosifer&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:wght@500;800&display=swap');
+
+a{
+    all: unset;
+}
+
+.navbar{
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    background-color: #f8f8f8;
+}
+
+.logo-text{
+    /* Layout */
+    width: 95px;
+    height: 37px;
+
+
+    /*Typografia*/
+    color: #004805;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.menu{
+    /*Layout*/
+    width: 29px;
+
+    /*Typografia*/
+    display: flex;
+    gap: 27px;
+    color: #004805;
+    text-align: center;
+    font-family: Itim;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-inline: 100px;
+
+}
+
+.Banner-principal{
+    width: 554px;
+    height: 92px;
+
+}
