@@ -47,12 +47,13 @@ a{
 }
 
 .Banner-principal{
-    width: 554px;
-    height: 92px;
+    width: 600px;
+    height: 100px;
 
 }
 
 .mural-conteiner{
+    width: 45%;
     background-color: #0A2902;
 }
 
@@ -68,6 +69,46 @@ a{
 
 .img-mural-inf{
     display: flex;
+    width: auto;
     justify-content: space-around;
     padding: 24px 24px 11px 24px;
+}
+.siga-nossas-redes{
+    width: 102px;
+    color: #000;
+    text-align: center;
+    font-family: Itim;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.icons-footer{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 6px 7px;
+}
+
+.geral-footer{
+    display: flex;
+}
+
+.endereço-footer{
+    width: 135px;
+    height: 44px;
+    display: flex;
+    justify-content: flex-end;
+    color: #000000;
+    text-align: center;
+    font-family: Itim;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 24%;
+    
+
 }
