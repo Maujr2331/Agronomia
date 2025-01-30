@@ -19,7 +19,6 @@ a{
     width: 95px;
     height: 37px;
 
-
     /*Typografia*/
     color: #004805;
     font-family: Inter;
@@ -28,6 +27,7 @@ a{
     font-weight: 700;
     line-height: normal;
 }
+
 .menu{
     /*Layout*/
     width: 29px;
@@ -43,13 +43,11 @@ a{
     font-weight: 400;
     line-height: normal;
     margin-inline: 100px;
-
 }
 
 .Banner-principal{
     width: 600px;
     height: 100px;
-
 }
 
 .mural-conteiner{
@@ -73,6 +71,7 @@ a{
     justify-content: space-around;
     padding: 24px 24px 11px 24px;
 }
+
 .siga-nossas-redes{
     width: 102px;
     color: #000;
@@ -109,6 +108,71 @@ a{
     font-weight: 400;
     line-height: normal;
     margin-left: 24%;
-    
+}
 
+/* Responsividade */
+@media (max-width: 1024px) {
+    .menu {
+        margin-inline: 50px; /* Reduz a margem do menu */
+        gap: 15px; /* Diminui o espaçamento entre os itens */
+    }
+    .logo-text {
+        font-size: 28px; /* Reduz ligeiramente a logo */
+    }
+    .mural-conteiner {
+        width: 60%; /* Aumenta um pouco para melhor adaptação */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Faz os itens ficarem um abaixo do outro */
+        align-items: center;
+        text-align: center;
+    }
+    .menu {
+        flex-direction: column; /* Deixa o menu em lista vertical */
+        gap: 10px;
+        margin-inline: 0; /* Remove margens laterais */
+    }
+    .logo-text {
+        font-size: 24px;
+    }
+    .Banner-principal {
+        width: 90%; /* Ajusta a largura do banner */
+        height: auto;
+    }
+    .mural-conteiner {
+        width: 80%; /* Ajusta mural para telas menores */
+    }
+    .geral-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .endereço-footer {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 20px; /* Deixa menor para telas pequenas */
+    }
+    .menu {
+        font-size: 10px; /* Reduz tamanho do menu */
+    }
+    .mural-conteiner {
+        width: 100%; /* Ocupa toda a largura */
+    }
+    .mural-inf {
+        font-size: 24px;
+    }
+    .icons-footer {
+        width: 20px;
+        height: 20px;
+    }
+    .endereço-footer {
+        font-size: 10px;
+    }
 }
