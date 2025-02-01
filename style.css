@@ -1,7 +1,7 @@
-/*Fonte da logo*/
+/* Fonte da logo */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nosifer&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:wght@500;800&display=swap');
 
-/*Fonte do menu*/
+/* Fonte do menu */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Nosifer&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:wght@500;800&display=swap');
 
 html, body {
@@ -12,11 +12,11 @@ html, body {
     overflow-x: hidden; /* Evita rolagem horizontal */
 }
 
-a{
+a {
     all: unset;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center; /* Alinha verticalmente */
     background-color: #f8f8f8;
@@ -24,26 +24,21 @@ a{
     width: 100%;
 }
 
-.logo-text{
+.logo {
     /* Layout */
-    width: 95px;
-    height: 37px;
-
-    /*Typografia*/
-    color: #004805;
-    font-family: Inter;
-    font-size: 50px;
-    padding: 0 15px 5px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    width: auto; /* Ajusta a largura automaticamente */
+    height: auto; /* Ajusta a altura automaticamente */
+    max-width: 100px; /* Limita a largura para 100px */
+    max-height: 100px; /* Limita a altura para 100px */
+    display: block; /* Garante que a logo seja exibida como um bloco */
+    margin-left: 12px;
 }
 
-.menu{
-    /*Layout*/
+.menu {
+    /* Layout */
     width: auto;
 
-    /*Typografia*/
+    /* Tipografia */
     display: flex;
     gap: 27px;
     color: #004805;
@@ -56,22 +51,50 @@ a{
     margin-inline: auto;
 }
 
-.Banner-principal {
-    width: 100vw; 
-    height: 100%; 
-    background-size: cover; 
-    background-position: center; 
+/* Carrossel do banner */
+.banner {
+    width: 100vw;
+    height: 60vh; /* Ajusta a altura para 60% da altura da tela */
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
+    margin-bottom: 0%; /* Adiciona um espaço entre o banner e o mural */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 1s ease;
+    position: relative;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
-.mural-conteiner{
+/* Aplicando a animação no banner */
+.carousel-item {
+    animation: slide 20s infinite;
+}
+
+
+/* Container do mural */
+.mural-conteiner {
     width: 100%;
     padding: 2%;
     background-color: #0A2902;
+    margin-top: -1%; /* Reduzido para diminuir ainda mais o espaçamento */
 }
 
-.mural-inf{
+.mural-inf {
     color: #c0ffc4;
     text-align: center;
     font-family: Itim;
@@ -84,19 +107,17 @@ a{
 .img-mural-inf {
     display: flex;
     justify-content: space-around;
-    padding: 24px;
+    padding: 16px; /* Diminuído o padding */
     width: 100%; /* Certifique-se de que o contêiner ocupa toda a largura */
-    gap: 20px; /* Espaço entre as imagens */
+    gap: 15px; /* Espaço reduzido entre as imagens */
 }
 
 .img-mural-inf img {
-    width: auto;
-    max-width: 100px;
     height: auto;
     object-fit: cover;
 }
 
-.siga-nossas-redes{
+.siga-nossas-redes {
     width: 102px;
     color: #000;
     text-align: center;
@@ -108,7 +129,7 @@ a{
     margin-top: 5%;
 }
 
-.icons-footer{
+.icons-footer {
     width: 30px;
     height: 30px;
     display: flex;
@@ -117,12 +138,12 @@ a{
     padding: 5% 12%;
 }
 
-.geral-footer{
+.geral-footer {
     display: flex;
     width: 100%;
 }
 
-.endereço-footer{
+.endereço-footer {
     width: 240px;
     height: 44px;
     display: flex;
@@ -171,6 +192,7 @@ a{
     }
     .mural-conteiner {
         width: 100%; /* Ajusta mural para telas menores */
+        margin-top: 0%; /* Garante que o mural fique colado ao banner */
     }
     .geral-footer {
         flex-direction: column;
