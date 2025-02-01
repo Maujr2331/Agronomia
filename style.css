@@ -4,6 +4,14 @@
 /*Fonte do menu*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Nosifer&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:wght@500;800&display=swap');
 
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
 a{
     all: unset;
 }
@@ -12,6 +20,8 @@ a{
     display: flex;
     align-items: center; /* Alinha verticalmente */
     background-color: #f8f8f8;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .logo-text{
@@ -22,7 +32,8 @@ a{
     /*Typografia*/
     color: #004805;
     font-family: Inter;
-    font-size: 32px;
+    font-size: 50px;
+    padding: 0 15px 5px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -30,7 +41,7 @@ a{
 
 .menu{
     /*Layout*/
-    width: 29px;
+    width: auto;
 
     /*Typografia*/
     display: flex;
@@ -38,20 +49,25 @@ a{
     color: #004805;
     text-align: center;
     font-family: Itim;
-    font-size: 12px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-inline: 100px;
+    margin-inline: auto;
 }
 
-.Banner-principal{
-    width: 600px;
-    height: 100px;
+.Banner-principal {
+    width: 100vw; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
 }
+
 
 .mural-conteiner{
-    width: 45%;
+    width: 100%;
+    padding: 2%;
     background-color: #0A2902;
 }
 
@@ -65,11 +81,19 @@ a{
     line-height: normal;
 }
 
-.img-mural-inf{
+.img-mural-inf {
     display: flex;
-    width: auto;
     justify-content: space-around;
-    padding: 24px 24px 11px 24px;
+    padding: 24px;
+    width: 100%; /* Certifique-se de que o contêiner ocupa toda a largura */
+    gap: 20px; /* Espaço entre as imagens */
+}
+
+.img-mural-inf img {
+    width: auto;
+    max-width: 100px;
+    height: auto;
+    object-fit: cover;
 }
 
 .siga-nossas-redes{
@@ -81,6 +105,7 @@ a{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: 5%;
 }
 
 .icons-footer{
@@ -88,26 +113,28 @@ a{
     height: 30px;
     display: flex;
     justify-content: space-around;
-    padding: 10px 6px 7px;
+    gap: 20px;
+    padding: 5% 12%;
 }
 
 .geral-footer{
     display: flex;
+    width: 100%;
 }
 
 .endereço-footer{
-    width: 135px;
+    width: 240px;
     height: 44px;
     display: flex;
     justify-content: flex-end;
     color: #000000;
     text-align: center;
     font-family: Itim;
-    font-size: 12px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: 24%;
+    margin-left: auto;
 }
 
 /* Responsividade */
@@ -120,7 +147,7 @@ a{
         font-size: 28px; /* Reduz ligeiramente a logo */
     }
     .mural-conteiner {
-        width: 60%; /* Aumenta um pouco para melhor adaptação */
+        width: 100%; /* Ajuste para ocupar toda a largura */
     }
 }
 
@@ -143,7 +170,7 @@ a{
         height: auto;
     }
     .mural-conteiner {
-        width: 80%; /* Ajusta mural para telas menores */
+        width: 100%; /* Ajusta mural para telas menores */
     }
     .geral-footer {
         flex-direction: column;
