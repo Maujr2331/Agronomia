@@ -28,8 +28,8 @@ a {
     /* Layout */
     width: auto; /* Ajusta a largura automaticamente */
     height: auto; /* Ajusta a altura automaticamente */
-    max-width: 100px; /* Limita a largura para 100px */
-    max-height: 100px; /* Limita a altura para 100px */
+    max-width: 125px; /* Limita a largura para 100px */
+    max-height: 125px; /* Limita a altura para 100px */
     display: block; /* Garante que a logo seja exibida como um bloco */
     margin-left: 12px;
 }
@@ -54,12 +54,12 @@ a {
 /* Carrossel do banner */
 .banner {
     width: 100vw;
-    height: 60vh; /* Ajusta a altura para 60% da altura da tela */
+    height: 50vh; /* Ajusta a altura para 60% da altura da tela */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    margin-bottom: 0%; /* Adiciona um espaço entre o banner e o mural */
+    margin-bottom: 1px; /* Adiciona um espaço entre o banner e o mural */
 }
 
 .carousel {
@@ -95,6 +95,7 @@ a {
 }
 
 .mural-inf {
+    width: 100%;
     color: #c0ffc4;
     text-align: center;
     font-family: Itim;
@@ -109,7 +110,7 @@ a {
     justify-content: space-around;
     padding: 16px; /* Diminuído o padding */
     width: 100%; /* Certifique-se de que o contêiner ocupa toda a largura */
-    gap: 15px; /* Espaço reduzido entre as imagens */
+    gap: 10px; /* Espaço reduzido entre as imagens */
 }
 
 .img-mural-inf img {
