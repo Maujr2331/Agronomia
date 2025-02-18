@@ -1,39 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Login</title>
     <link rel="stylesheet" href="cadastro.css">
-    <title>Cadastro</title>
 </head>
 <body>
-    <header>
-        <div>
-            <h3>Cadastre-se</h3>
-            <p>Digite seus dados de acesso no campo abaixo</p>
-        </div>       
-    </header>
-
-    <main>
-        <div>
+    <div class="container">
+        <h2 class="title-login">Cadastre-se</h2>
+        <form>
             <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite Seu E-mail" name="e-mail" id="">
-        </div>
+            <input type="email" placeholder="Insira seu e-mail" name="email" required>
 
-        <div>
             <label for="senha">Senha</label>
-            <input type="password" placeholder="Digite Sua Senha" name="Senha" id="">
+            <input type="password" placeholder="crie uma senha" name="senha" required>
 
-            <label for="confirmarSenha">Repita a Senha</label>
-            <input type="password" placeholder="Digite Sua Senha Novamente" name="" id="">
-        </div>
-    </main>
+            <label for="senha">Senha</label>
+            <input type="password"  placeholder="Confirme sua senha" name="confirmar-senha" required>
 
-    <footer>
-        <div>
-            <p>Voltar para o login</p>
-            <button type="button">Cadastrar-se</button>
-        </div>
-    </footer>
+            <button type="submit">Entrar</button>
+        </form>
+        <p class="register-link">Não tem uma conta? <a href="#">Cadastre-se</a></p>
+    </div>
 </body>
 </html>
