@@ -4,12 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalItems = items.length;
     let currentIndex = 0;
 
-    // Função para mover para o próximo item
     function moveToNext() {
-        currentIndex = (currentIndex + 1) % totalItems; // Volta para o início após a última imagem
-        const offset = -currentIndex * 100; // Desloca as imagens
-        carousel.style.transform = `translateX(${offset}%)`; // Move o carrossel
+        currentIndex = (currentIndex + 1) % totalItems;
+        const offset = -currentIndex * 100;
+        carousel.style.transform = `translateX(${offset}%)`; 
     }
 
-    setInterval(moveToNext, 3000); // A cada 3 segundos, move para a próxima imagem
+    setInterval(moveToNext, 3000);
 });
