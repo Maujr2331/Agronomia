@@ -51,6 +51,11 @@ a {
     margin-inline: auto;
 }
 
+a:hover{
+    cursor: pointer;
+    color: #10a31a71;
+}
+
 /* Carrossel do banner */
 .banner {
     width: 100vw;
