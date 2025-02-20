@@ -34,6 +34,10 @@ a {
     margin-left: 12px;
 }
 
+i{
+    padding: 6px;
+}
+
 .menu {
     /* Layout */
     width: auto;
