@@ -145,7 +145,7 @@ a:hover{
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    padding: 5% 12%;
+    padding: 5% 3%;
 }
 
 .geral-footer {
