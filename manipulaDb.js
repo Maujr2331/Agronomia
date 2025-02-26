@@ -32,8 +32,7 @@ function consultarUsuarios() {
   });
 }
 
-adicionarUsuario('Ana', 27);
-adicionarUsuario('João', 30);
+adicionarUsuario('');
 
 consultarUsuarios();
 

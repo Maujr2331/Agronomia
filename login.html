@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel de Login</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body class="body-login">
     <div class="container">
         <h2 class="title-login">Login</h2>
         <form>
             <label for="email">E-mail</label>
-            <input type="email" placeholder="Insira seu e-mail"  required>
+            <input type="text" placeholder="Insira seu e-mail"  id="email">
 
             <label for="senha">Senha</label>
-            <input type="password"  placeholder="Insira sua senha" required>
+            <input type="password"  placeholder="Insira sua senha" id="senha">
 
-            <button type="submit">Entrar</button>
+            <button type="submit" onclick="logar(); return false">Entrar</button>
         </form>
         <p class="register-link">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
     </div>

@@ -1,14 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector('.carousel');
-    const items = document.querySelectorAll('.carousel-item');
-    const totalItems = items.length;
-    let currentIndex = 0;
+function logar() {
+    var email = document.getElementById('email').value.trim();
+    var senha = document.getElementById('senha').value.trim();
 
-    function moveToNext() {
-        currentIndex = (currentIndex + 1) % totalItems;
-        const offset = -currentIndex * 100;
-        carousel.style.transform = `translateX(${offset}%)`; 
+    if (email === "admin" && senha === "admin") {
+        alert('Login bem-sucedido!');
+        window.location.assign("index.html");
+    } else {
+        alert('Email ou Senha Incorretos!');
     }
-
-    setInterval(moveToNext, 3000);
-});
+}

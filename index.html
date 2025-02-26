@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    
     <script src="https://kit.fontawesome.com/794ffdf9bf.js" crossorigin="anonymous"></script>
-
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <title>Agrolife 2.0</title>
 </head>
 <body>
@@ -16,11 +14,11 @@
         <img class="logo" src="imagens/logo.png" alt="Logo">
 
         <div class="menu">
-            <a href="#"><i class="fa-sharp fa-solid fa-house"></i></i>Inicio</a>
+            <a href="#"><i class="fa-sharp fa-solid fa-house"></i>Inicio</a>
             <a href="#"><i class="fa-solid fa-calendar"></i>Eventos</a>
             <a href="#"><i class="fa-solid fa-people-group"></i>Quem Somos</a>
             <a href="#"><i class="fa-solid fa-address-book"></i>Contato</a>
-            <a href="login.html"><i class="fa-solid fa-user"></i>Conta</a>
+            <a href="login.html"><i class="fa-solid fa-user"></i>Usuario</a>
         </div>
     </header>
 
@@ -56,6 +54,23 @@
         </div>
         <h5 class="endereço-footer">Av. dos Programadores, Bairro Debugville,Cidade Codeópolis - Estado DevCEP: 12345-678</h5>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const carousel = document.querySelector('.carousel');
+            const items = document.querySelectorAll('.carousel-item');
+            const totalItems = items.length;
+            let currentIndex = 0;
+
+            function moveToNext() {
+                currentIndex = (currentIndex + 1) % totalItems;
+                const offset = -currentIndex * 100;
+                carousel.style.transform = `translateX(${offset}%)`; 
+            }
+
+            setInterval(moveToNext, 3000);
+        });
+    </script>
    </footer>
 </body>
 </html>
